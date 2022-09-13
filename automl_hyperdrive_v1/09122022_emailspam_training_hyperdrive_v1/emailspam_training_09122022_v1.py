@@ -146,12 +146,20 @@ model.summary()
 hist = model.fit(xTrain, yTrain, batch_size=32, epochs=100, initial_epoch=6, validation_data=(xTest, yTest))
 
 # calculate accuracy
-y_hat = model.predict(xTest)
-acc = np.average(y_hat == yTest)
-print('Accuracy:', acc)
-run.log('Accuracy', np.float64(acc))
+# y_hat = model.predict(xTest)
+# acc = np.average(y_hat == yTest)
+# print('Accuracy:', acc)
+# run.log('Accuracy', np.float64(acc))
 
 print('hist type: ', type(hist))
+
+eval_result = model.evaluate(xTest, yTest)
+
+print('evaluated results: ', eval_result)
+
+# run.log('loss', np.float64(eval_result[0]))
+run.log('Accuracy', np.float64(eval_result[1]))
+
 
 # calculate AUC
 # y_scores = model.predict_proba(xTest)
