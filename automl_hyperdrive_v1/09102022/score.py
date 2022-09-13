@@ -18,7 +18,7 @@ from inference_schema.parameter_types.numpy_parameter_type import NumpyParameter
 from inference_schema.parameter_types.pandas_parameter_type import PandasParameterType
 from inference_schema.parameter_types.standard_py_parameter_type import StandardPythonParameterType
 
-input_sample = pd.DataFrame({"v2": pd.Series(["example_value"], dtype="object"), "Column4": pd.Series(["example_value"], dtype="object"), "Column5": pd.Series(["example_value"], dtype="object"), "Column6": pd.Series(["example_value"], dtype="object")})
+input_sample = pd.DataFrame({"v2": pd.Series(["I would work with you on Neural Network"], dtype="object"), "Column4": pd.Series(["example_value"], dtype="object"), "Column5": pd.Series(["example_value"], dtype="object"), "Column6": pd.Series(["example_value"], dtype="object")})
 output_sample = np.array(["example_value"])
 method_sample = StandardPythonParameterType("predict")
 

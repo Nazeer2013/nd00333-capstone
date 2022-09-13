@@ -1,0 +1,12 @@
+name: batch_environment
+dependencies:
+- python=3.8.5
+- scikit-learn
+- pandas
+- numpy
+- regex
+- tensorflow
+- nltk
+- pip
+- pip:
+  - azureml-defaults
