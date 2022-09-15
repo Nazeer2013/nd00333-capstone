@@ -69,12 +69,12 @@ def run(data, method="predict"):
             print("model type: ", type(model))
             # <class 'keras.engine.sequential.Sequential'>
             print("****************************************************")
-            text = input_sample.get('v2')[0]
+            text = data.get('v2')[0]
             processed_text = clean_text(text)
             print("Processed Text: ", processed_text)
             tokenizer = K.preprocessing.text.Tokenizer()
             tokenizer.oov_token = '<oovToken>'
-            tokenizer.fit_on_texts(processed_text)
+            # tokenizer.fit_on_texts("")
             final_text = K.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([processed_text]), padding='pre', maxlen=171)
             print("Final Text: ", final_text)
             result = model.predict(final_text)
@@ -82,8 +82,8 @@ def run(data, method="predict"):
         else:
             raise Exception(f"Invalid predict method argument received ({method})")
         if isinstance(result, np.ndarray):
-            print("result instance of numpy ndarry")
-            print("result shape", result.shape)
+            print("result instance of numpy ndarry: ")
+            print("result shape: ", result.shape)
             print("Ham or Spam: ",np.int32(np.rint(result[0,0])))
             if 0 == (np.int32(np.rint(result[0,0]))):
                 str_result = "Ham"
