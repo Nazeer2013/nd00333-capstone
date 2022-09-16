@@ -1,0 +1,84 @@
+2022-09-15 23:19:09.645 - INFO - 27224 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetOutput
+2022-09-15 23:19:09.676 - INFO - 27224 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetOutput
+2022-09-15 23:19:09.702 - INFO - 27224 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetChildren
+2022-09-15 23:19:12.255 - INFO - 27224 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=2553.49[ms]
+2022-09-15 23:19:12.906 - INFO - 27224 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=3230.97[ms]
+2022-09-15 23:19:12.907 - INFO - 27224 - azureml.train.automl._model_download_utilities._log_activity:55 - ActivityStarted: DownloadModel
+2022-09-15 23:19:19.895 - CRITICAL - 27224 - azureml.train.automl._model_download_utilities.log_traceback:227 - Type: Unclassified
+Class: OSError
+Message: dlopen(/opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so, 6): Library not loaded: /usr/local/opt/libomp/lib/libomp.dylib
+  Referenced from: /opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so
+  Reason: image not found
+Traceback:
+  File "_model_download_utilities.py", line 172, in _load_automl_model
+    fitted_model = pickle.load(model_file)  # type: Optional[Any]
+  File "model_wrappers.py", line 16, in <module>
+    import lightgbm as lgb
+  File "__init__.py", line 8, in <module>
+    from .basic import Booster, Dataset, register_logger
+  File "basic.py", line 95, in <module>
+    _LIB = _load_lib()
+  File "basic.py", line 86, in _load_lib
+    lib = ctypes.cdll.LoadLibrary(lib_path[0])
+  File "__init__.py", line 451, in LoadLibrary
+    return self._dlltype(name)
+  File "__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+
+ExceptionTarget: Unspecified
+2022-09-15 23:19:20.617 - CRITICAL - 27224 - azureml.train.automl._model_download_utilities.log_traceback:227 - Type: Unclassified
+Class: OSError
+Message: dlopen(/opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so, 6): Library not loaded: /usr/local/opt/libomp/lib/libomp.dylib
+  Referenced from: /opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so
+  Reason: image not found
+Traceback:
+  File "telemetry_activity_logger.py", line 58, in _log_activity
+    yield
+  File "_model_download_utilities.py", line 80, in _download_automl_model
+    model = _load_automl_model(model_path, suffix)
+  File "_model_download_utilities.py", line 172, in _load_automl_model
+    fitted_model = pickle.load(model_file)  # type: Optional[Any]
+  File "model_wrappers.py", line 16, in <module>
+    import lightgbm as lgb
+  File "__init__.py", line 8, in <module>
+    from .basic import Booster, Dataset, register_logger
+  File "basic.py", line 95, in <module>
+    _LIB = _load_lib()
+  File "basic.py", line 86, in _load_lib
+    lib = ctypes.cdll.LoadLibrary(lib_path[0])
+  File "__init__.py", line 451, in LoadLibrary
+    return self._dlltype(name)
+  File "__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+
+ExceptionTarget: Unspecified
+2022-09-15 23:19:20.618 - INFO - 27224 - azureml.train.automl._model_download_utilities._log_activity:89 - ActivityCompleted: Activity=DownloadModel, HowEnded=Failure, Duration=7710.59[ms]
+2022-09-15 23:19:20.628 - CRITICAL - 27224 - azureml.train.automl.run.log_traceback:227 - Type: Unclassified
+Class: OSError
+Message: dlopen(/opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so, 6): Library not loaded: /usr/local/opt/libomp/lib/libomp.dylib
+  Referenced from: /opt/anaconda3/lib/python3.8/site-packages/lightgbm/lib_lightgbm.so
+  Reason: image not found
+Traceback:
+  File "telemetry_activity_logger.py", line 58, in _log_activity
+    yield
+  File "run.py", line 718, in get_output
+    fitted_model = _download_automl_model(curr_run, model_name)
+  File "_model_download_utilities.py", line 80, in _download_automl_model
+    model = _load_automl_model(model_path, suffix)
+  File "_model_download_utilities.py", line 172, in _load_automl_model
+    fitted_model = pickle.load(model_file)  # type: Optional[Any]
+  File "model_wrappers.py", line 16, in <module>
+    import lightgbm as lgb
+  File "__init__.py", line 8, in <module>
+    from .basic import Booster, Dataset, register_logger
+  File "basic.py", line 95, in <module>
+    _LIB = _load_lib()
+  File "basic.py", line 86, in _load_lib
+    lib = ctypes.cdll.LoadLibrary(lib_path[0])
+  File "__init__.py", line 451, in LoadLibrary
+    return self._dlltype(name)
+  File "__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+
+ExceptionTarget: Unspecified
+2022-09-15 23:19:20.628 - INFO - 27224 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetOutput, HowEnded=Failure, Duration=10983.0[ms]
