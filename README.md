@@ -23,3 +23,15 @@ Udacity AzureML Final Project
 ***Auto ML Step 4***
 
 ![Auto ML Step 4](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_4.png)
+
+## Azure HyperDrive excution using Logistic Regression
+
+** SMS Spam using HyperDrive Logistic Regression 
+
+![Logistic Regression Hyperdrive run Notebook](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0919-v7.ipynb)
+
+
+
+
+
+
