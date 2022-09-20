@@ -6,4 +6,5 @@ Udacity AzureML Final Project
 
 ## Auto ML using Python SDK
 
-!(https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
+![Auto ML Step 1]
+(https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
