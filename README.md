@@ -31,7 +31,9 @@ Udacity AzureML Final Project
 ![Logistic Regression Hyperdrive run Notebook](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0919-v7.ipynb)
 
 
+## HyperParameter tuning Keras tuner
 
+![Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
 
 
 
