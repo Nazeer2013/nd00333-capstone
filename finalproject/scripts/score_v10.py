@@ -72,7 +72,7 @@ def init():
         svc_pr = ServicePrincipalAuthentication(
         tenant_id="db05faca-c82a-4b9d-b9c5-0f64b6755421",
         service_principal_id="ed84bd8b-0d92-4b6d-be98-b0adcbd37cc0",
-        service_principal_password="9HU8Q~-GIbwm~NHuZtlC2C5ouzbNklX0~1mlebYh")
+        service_principal_password="*******************************")
 
         
         ws = Workspace(
@@ -185,7 +185,7 @@ def run(data, method="predict"):
             print("******************************************************")
             print(type(result))
             print(result)
-            # print(result.values)
+            print(result[0])
 
             
             if 0 == (np.int32(result[0])):
