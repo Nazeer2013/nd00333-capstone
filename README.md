@@ -8,7 +8,7 @@ Udacity AzureML Final Project
 
 ***Project Notebook link***
 
-![Spam Detection Auto ML Python SDK Notebook Project](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
+[Spam Detection Auto ML Python SDK Notebook Project](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
 
 ![Auto ML Step 1](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
 
@@ -28,7 +28,7 @@ Udacity AzureML Final Project
 
 ** SMS Spam using HyperDrive Logistic Regression 
 
-![Logistic Regression Hyperdrive run Notebook](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0919-v7.ipynb)
+[Logistic Regression Hyperdrive run Notebook](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0919-v7.ipynb)
 
 ![](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/LogReg_Hperdrive_Hyperparam_Results.png)
 
@@ -41,7 +41,11 @@ Udacity AzureML Final Project
 
 ## HyperParameter tuning Keras tuner
 
-![Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
+[Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
 
 
+
+### References
+
+https://tom-stevenson.medium.com/we-are-living-in-the-age-of-information-overload-720ea5d31afb
 
