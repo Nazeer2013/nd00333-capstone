@@ -114,7 +114,7 @@ Test model service using scoring uri.
 
 ![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_test2.png)
 
-# ======================================================================
+# ==========================================================================
 
 # Azure HyperDrive excution using Logistic Regression
 
