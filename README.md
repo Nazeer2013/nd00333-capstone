@@ -29,18 +29,23 @@ Spam is unsolicited and unwanted messages sent electronically  and whose content
 ***Step 1: Initialize Workspace***
 
 ***Step 2: Create Experiment attach Compute***
-![Auto ML Step 1](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
+
 
 
 ***Step 3: Upload Dataset***
 
 ***Step 4: Create AutoML Config and Submit AutoML Experiment***
-![Auto ML Step 2](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_2.png)
+
+![Auto ML Experiment Running view](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_3.png)
+
+![AutoML Experiment Completed view](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
+
+![Auto ML Best Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_2.png)
 
 
 ***Step 5: Deploy Best Model***
 
-![Auto ML Step 3](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_3.png)
+
 
 
 ***Step 6: Test API Endpoint***
