@@ -1,14 +1,21 @@
 # nd00333-capstone
 Udacity AzureML Final Project
 
-### SMS Spam Detection
+# SMS Spam Detection using Azure Machine learning
+
+Problem of Information overload need to be recognized and addressed.
+
+        A wealth of information creates a poverty of attention. 
+                                          - Herbert Simon
+
+One of the answers to the problem is to filter out the noise(spam) in this case from SMS.
 
 
 ## Auto ML using Python SDK
 
-***Project Notebook link***
+[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
 
-[Spam Detection Auto ML Python SDK Notebook Project](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
+
 
 ![Auto ML Step 1](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
 
