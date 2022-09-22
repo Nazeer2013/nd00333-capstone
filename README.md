@@ -112,7 +112,9 @@ Test model service using scoring uri.
 
 ![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_test1png.png)
 
-![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_test2.png)
+Postman Test
+
+![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_postman_test2.png)
 
 # ==========================================================================
 
