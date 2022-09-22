@@ -16,13 +16,20 @@ One of the answers to the problem is to filter out the noise(spam) in this case 
 Spam is unsolicited and unwanted messages sent electronically  and whose content may be malicious. SMS spam is typically transmitted over a mobile network. SMS mode is more dangerous in many ways one is by the fact that SMS is usually regarded by the user as a safer, more trustworthy form of communication than other sources, e. g., emails.
 
 
-# Data Selection
+# SMS Spam Data View
+
+Kaggle SMS Spam data
+
+![Kaggle SMS Spam data](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/images/DatasetView.png)
 
 
 ## Auto ML using Python SDK
 
+Spam Detection Auto ML Python SDK Project Notebook
 
 [Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
+
+AutoML SDK Architecture Flow
 
 ![AutoML SDK Architecture Flow](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/AutoMLArchitectuerFlow.png)
 
