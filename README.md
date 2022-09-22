@@ -64,20 +64,25 @@ Ready to submit AutoMl experiment.
 
 Once the execution is finished you can request detailed information about the results.
 
+![AutoML Execution](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automatedexecutionofmodels.png)
+
+
+
 ![Auto ML Experiment Running view](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_3.png)
+
+
 
 ![Auto ML Step 4](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_4.png)
 
+***AutoML Run Complete: Best Run***
 
-***AutoML Experiment Completed view***
-
-![AutoML Experiment Completed view](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
+![Auto ML Best Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_bestrun1.png)
 
 ***Retrieve Best Model***
 
 Now that you have several trained models ranked based on the metric you specified when configuring the AutoML experiment, you can retrieve the best one and use it to score and deploy as a service.
 
-![Auto ML Best Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_2.png)
+
 
 
 ### Step 5: Deploy Best Model
@@ -86,14 +91,29 @@ a. Use AutoML run get output to retrive best run. Using best run get model name.
 
 b. Use AutoML run to register best model.
 
+***Deployed Model***
+
+![Deployed Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_deployedmodel_endpoint.png)
+
 c. Download score and environment files from best run.
 
 d. Use Model deploy to deploy model by providing InferenceConfig and AciWebservice configuration. 
+
+***Deployed Endpoint***
+
+![Deployed Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_endpoint1.png)
 
 
 ### Step 6: Test API Endpoint
 
 Test model service using scoring uri.
+
+***Test Model API***
+
+![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_test1png.png)
+
+![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_test2.png)
+
 
 
 # Azure HyperDrive excution using Logistic Regression
