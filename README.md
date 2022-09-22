@@ -11,25 +11,45 @@ Problem of Information overload need to be recognized and addressed.
 One of the answers to the problem is to filter out the noise(spam) in this case from SMS.
 
 
+## Context and Data Selection
+
+Spam is unsolicited and unwanted messages sent electronically  and whose content may be malicious. SMS spam is typically transmitted over a mobile network. SMS mode is more dangerous in manyways one is by the fact that SMS is usually regarded by the user as a safer, more trustworthy form of communication than other sources, e. g., emails.
+
+
+
+
+
 ## Auto ML using Python SDK
+
 
 [Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
 
+![AutoML SDK Architecture Flow](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/AutoMLArchitectuerFlow.png)
 
+***Step 1: Initialize Workspace***
 
+***Step 2: Create Experiment attach Compute***
 ![Auto ML Step 1](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
 
-***Auto ML Step 2***
 
+***Step 3: Upload Dataset***
+
+***Step 4: Create AutoML Config and Submit AutoML Experiment***
 ![Auto ML Step 2](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_2.png)
 
-***Auto ML Step 3***
+
+***Step 5: Deploy Best Model***
 
 ![Auto ML Step 3](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_3.png)
 
-***Auto ML Step 4***
+
+***Step 6: Test API Endpoint***
 
 ![Auto ML Step 4](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_4.png)
+
+
+
+
 
 ## Azure HyperDrive excution using Logistic Regression
 
@@ -54,5 +74,6 @@ One of the answers to the problem is to filter out the noise(spam) in this case 
 
 ### References
 
-https://tom-stevenson.medium.com/we-are-living-in-the-age-of-information-overload-720ea5d31afb
+[Living in the age of information overload](https://tom-stevenson.medium.com/we-are-living-in-the-age-of-information-overload-720ea5d31afb)
 
+[Kaggle Spam-Ham SMS classification Data](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification/data?select=spam.csv)
