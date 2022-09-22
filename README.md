@@ -42,10 +42,7 @@ Create an environment from a Conda specification.
 
 For already uploaded dataset bring it to your notebook using key from workspace. 
 
-### Kaggle SMS Spam Data View
-
-Kaggle SMS Spam data:
-
+***Kaggle SMS Spam Data View***
 
 ![Kaggle SMS Spam data](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/images/DatasetView.png)
 
