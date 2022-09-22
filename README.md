@@ -16,13 +16,6 @@ One of the answers to the problem is to filter out the noise(spam) in this case 
 Spam is unsolicited and unwanted messages sent electronically  and whose content may be malicious. SMS spam is typically transmitted over a mobile network. SMS mode is more dangerous in many ways one is by the fact that SMS is usually regarded by the user as a safer, more trustworthy form of communication than other sources, e. g., emails.
 
 
-### Kaggle SMS Spam Data View
-
-Kaggle SMS Spam data:
-
-
-![Kaggle SMS Spam data](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/images/DatasetView.png)
-
 
 # Auto ML using Python SDK
 
@@ -49,6 +42,15 @@ Create an environment from a Conda specification.
 
 For already uploaded dataset bring it to your notebook using key from workspace. 
 
+### Kaggle SMS Spam Data View
+
+Kaggle SMS Spam data:
+
+
+![Kaggle SMS Spam data](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/images/DatasetView.png)
+
+
+
 ### Step 4: Create AutoML Config and Submit AutoML Experiment
 
 Represents configuration for submitting an automated ML experiment in Azure Machine Learning.
@@ -70,11 +72,12 @@ Once the execution is finished you can request detailed information about the re
 ![Auto ML Step 4](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_4.png)
 
 
-***AutoML Experiment Completed view ***
+***AutoML Experiment Completed view***
 
 ![AutoML Experiment Completed view](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1.png)
 
 ***Retrieve Best Model***
+
 Now that you have several trained models ranked based on the metric you specified when configuring the AutoML experiment, you can retrieve the best one and use it to score and deploy as a service.
 
 ![Auto ML Best Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/smsspam_aml_exp_v1_2.png)
