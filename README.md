@@ -196,3 +196,13 @@ Postman Test
 [Living in the age of information overload](https://tom-stevenson.medium.com/we-are-living-in-the-age-of-information-overload-720ea5d31afb)
 
 [Kaggle Spam-Ham SMS classification Data](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification/data?select=spam.csv)
+
+
+azureml.train.automl.automlconfig.AutoMLConfig class - Azure Machine Learning Python | Microsoft Learn
+ 
+Azure-Machine-Learning-Dev-Guide/automl-classification-code-sample.md at master · solliancenet/Azure-Machine-Learning-Dev-Guide (github.com)
+ 
+A Review of Azure Automated Machine Learning (AutoML) | by Luca Zavarella | Microsoft Azure | Medium
+ 
+PowerPoint Presentation (microsoft.com)
+ 
