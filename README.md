@@ -132,9 +132,46 @@ Postman Test
 ***[Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)***
 
 
+
 **Azure AutoML Hyperdrive Overview**
 
 ![Azure AutoML Overview](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/MicrosoftAutoML.png)
+
+After selection of the Dataset for your usecase, define configuration and constraints followed with Feature engineering and applicable and effective Algorithm selection. You would then continue with Hyperparameter tuning experimentation to search for the best model. Select model from the best run for deployment. 
+
+
+****Featurization**** is the process of applying techniques of Feature Engineering to the dataset that will help machine learning algorithm learn better.
+
+In this case below listed feature engineering techniques are engaged
+        a. Elimination of stop words
+        b. Replacement of target attribute with numerics 1 for spam and 0 for ham.
+        c. Clean text of any punctuations, whitespaces and web addresses.
+        d. Stemming using NLTK Snowball Stemmer. A process of reducing a word to its base word,such that words of similar kind lie under a common stem.
+        e. TfidfVectorizer is an important NLP feature that converts text to a matrix of TF-IDF features.
+           (TF-IDF is an abbreviation of Term Frequency - Inverse Document Frequency)   
+
+
+****Model Selection**** Logistic Regression sounds to be the most natural fit to binary Spam classification problem (citing whitepaper from International Journal in below references). 
+        
+Logistic funtion is a S-shaped curve (also known as a sigmoid curve) that for a given set of input variables, produces an output between 0 and 1 which can be used to represent probability and with a given threshold would classify one way or the other. 
+
+**HyperParameters**
+
+Regularization techniques and streangth are to avoid Overfitting or UnderFitting model training. 
+
+Regularization techniques play a vital role in the development of machine learning models. Especially complex models, like neural networks, prone to overfitting the training data. Broken down, the word “regularize” states that we’re making something regular. In a mathematical or ML context, we make something regular by adding information which creates a solution that prevents overfitting. The “something” we’re making regular in our ML context is the  “objective function”, something we try to minimize during the optimization problem.
+
+Regularization is applying a penalty to increasing the magnitude of parameter values in order to reduce overfitting. When you train a model such as a logistic regression model, you are choosing parameters that give you the best fit to the data. This means minimizing the error between what the model predicts for your dependent variable given your data compared to what your dependent variable actually is.
+
+The problem comes when you have a lot of parameters (a lot of independent variables) but not too much data. In this case, the model will often tailor the parameter values to idiosyncrasies in your data -- which means it fits your data almost perfectly. However because those idiosyncrasies don't appear in future data you see, your model predicts poorly.
+
+To solve this, as well as minimizing the error as already discussed, you add to what is minimized and also minimize a function that penalizes large values of the parameters. Most often the function is λΣθj2, which is some constant λ times the sum of the squared parameter values θj2. The larger λ is the less likely it is that the parameters will be increased in magnitude simply to adjust for small perturbations in the data. In your case however, rather than specifying λ, you specify C=1/λ.
+
+--C  The parameters are numbers that tell the model what to do with the characteristics, whereas the hyperparameters instruct the model on how to choose parameters. Regularization will penalize the extreme parameters, the extreme values in the training data leads to overfitting.
+A high value of C tells the model to give more weight to the training data. A lower value of C will indicate the model to give complexity more weight at the cost of fitting the data. Thus, a high Hyper Parameter value C indicates that training data is more important and reflects the real world data, whereas low value is just the opposite of this.
+
+HyperDrive Selected ****Best run**** model ****hyperparameters**** are --C: 1.0 and --max_iter: 10
+
 
 
 ***AzureML HyperDrive Experiment Running***
