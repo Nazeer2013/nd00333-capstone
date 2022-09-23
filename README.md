@@ -229,7 +229,7 @@ HyperDrive Selected ****Best run**** model ****hyperparameters**** are --C: 1.0 
 
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-32-10.png)
 
-[link to Score.py for Hyperdrive experiment testing](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/scripts/score_v7.py)
+[link to Score.py used for Hyperdrive experiment testing](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/scripts/score_v7.py)
 
 
 
