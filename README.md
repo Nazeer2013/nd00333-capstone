@@ -117,12 +117,15 @@ Postman Test
 ![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_postman_test2.png)
 
 # =====================================
-# Azure HyperDrive excution using Logistic Regression
+# Azure HyperDrive execution using Logistic Regression
 # =====================================
 
 ## SMS Spam Experiment using HyperDrive Logistic Regression 
 
 [Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)
+
+
+
 
 ***AzureML HyperDrive Experiment Running***
 
@@ -153,7 +156,7 @@ Postman Test
 
 
 # =====================================
-# HyperParameter tuning Keras tuner
+# HyperParameter tuning using Keras tuner
 # =====================================
 
 
