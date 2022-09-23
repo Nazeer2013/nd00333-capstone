@@ -124,7 +124,7 @@ Postman Test
 
 [Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)
 
-***Azure HyperDrive Experiment***
+***AzureML HyperDrive Experiment Running***
 
 
 ![Azure ML Hyperdrive experiment running](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_12-39-03.png)
@@ -133,10 +133,19 @@ Postman Test
 ![Azure ML Hyperdrive experiment Accuracy plot runtime](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_12-39-34.png)
 
 
+***AzureML HyperDrive Experiment Run Complete***
+
+
 ![Azure ML Hyperdrive experiment run complete.](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-26-43.png)
 
 
+***AzureML HyperDrive Experiment Accuracy plot***
+
+
 ![Azure ML Hyperdrive experiment complete](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-28-27.png)
+
+
+***AzureML HyperDrive Experiment Selected Best Run***
 
 
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-32-10.png)
