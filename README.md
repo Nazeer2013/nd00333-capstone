@@ -28,10 +28,6 @@ This problem is solved using three different approaches:
 ***[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)***
 
 
-***Azure AutoML Overview**
-
-![Azure AutoML Overview](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/MicrosoftAutoML.png)
-
 Azure AutoML helps find the best model that suits your data FAST! 
 
 With Automated machine learning we can focus on the testing of most accurate models and avoid testing a large range of less valuable models, as it retains only the ones we want.
@@ -136,6 +132,9 @@ Postman Test
 ***[Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)***
 
 
+**Azure AutoML Hyperdrive Overview**
+
+![Azure AutoML Overview](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/MicrosoftAutoML.png)
 
 
 ***AzureML HyperDrive Experiment Running***
