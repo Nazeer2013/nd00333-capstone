@@ -278,20 +278,19 @@ Exporting programs ("graphs") to external runtimes such as servers, browsers, mo
 
 [Kaggle Spam-Ham SMS classification Data](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification/data?select=spam.csv)
 
+[Azure AutoML](https://medium.com/microsoftazure/a-review-of-azure-automated-machine-learning-automl-5d2f98512406#:~:text=Azure%20AutoML%20is%20a%20cloud,pre%2Dprocess%20the%20input%20dataset.)
 
-[](https://medium.com/microsoftazure/a-review-of-azure-automated-machine-learning-automl-5d2f98512406#:~:text=Azure%20AutoML%20is%20a%20cloud,pre%2Dprocess%20the%20input%20dataset.)
+[Azure AutoML Media](https://azure.microsoft.com/mediahandler/files/resourcefiles/automated-ml/Automated%20ML%20Infographic.pdf)
 
-[](https://azure.microsoft.com/mediahandler/files/resourcefiles/automated-ml/Automated%20ML%20Infographic.pdf)
+[Liblinear Whitepaper](https://www.csie.ntu.edu.tw/~cjlin/papers/liblinear.pdf)
 
-[](https://www.csie.ntu.edu.tw/~cjlin/papers/liblinear.pdf)
+[CMU Project](https://www.cs.cmu.edu/~gpekhime/Projects/CSC2515/project.pdf)
 
-[](https://www.cs.cmu.edu/~gpekhime/Projects/CSC2515/project.pdf)
+[Logistic Regression WP](https://ijisrt.com/assets/upload/files/IJISRT21SEP728.pdf)
 
-[](https://ijisrt.com/assets/upload/files/IJISRT21SEP728.pdf)
+[Logistic Regression scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
 
-[](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
-
-[](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification)
+[Kaggle Spam and Ham classificaton](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification)
 
 
 
