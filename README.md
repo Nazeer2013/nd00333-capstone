@@ -93,7 +93,7 @@ b. Use AutoML run to register best model.
 
 ***Deployed Model***
 
-![Deployed Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_deployedmodel_endpoint.png)
+![Deployed Model](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/RegisteredBestModel.png)
 
 c. Download score and environment files from best run.
 
@@ -120,7 +120,7 @@ Postman Test
 # Azure HyperDrive execution using Logistic Regression
 # =====================================
 
-## SMS Spam Experiment using HyperDrive Logistic Regression 
+## SMS Spam Experiment using HyperDrive Logistic Regression Notebook
 
 [Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)
 
@@ -153,6 +153,10 @@ Postman Test
 
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-32-10.png)
 
+
+***AzureML HyperDrive Experiment Model Deployed***
+
+![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/RegisteredModel.png)
 
 
 # =====================================
