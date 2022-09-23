@@ -197,11 +197,6 @@ Postman Test
 [Kaggle Spam-Ham SMS classification Data](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification/data?select=spam.csv)
 
 
-[](azureml.train.automl.automlconfig.AutoMLConfig class - Azure Machine Learning Python | Microsoft Learn)
- 
-[](Azure-Machine-Learning-Dev-Guide/automl-classification-code-sample.md at master · solliancenet/Azure-Machine-Learning-Dev-Guide (github.com))
- 
-[](A Review of Azure Automated Machine Learning (AutoML) | by Luca Zavarella | Microsoft Azure | Medium)
- 
-[](PowerPoint Presentation (microsoft.com))
- 
+[](https://medium.com/microsoftazure/a-review-of-azure-automated-machine-learning-automl-5d2f98512406#:~:text=Azure%20AutoML%20is%20a%20cloud,pre%2Dprocess%20the%20input%20dataset.)
+
+[](https://azure.microsoft.com/mediahandler/files/resourcefiles/automated-ml/Automated%20ML%20Infographic.pdf)
