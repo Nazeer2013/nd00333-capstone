@@ -99,10 +99,6 @@ c. Download score and environment files from best run.
 
 d. Use Model deploy to deploy model by providing InferenceConfig and AciWebservice configuration. 
 
-***Deployed Endpoint***
-
-![Deployed Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_endpoint1.png)
-
 
 ### Step 6: Test API Endpoint
 
@@ -157,6 +153,13 @@ Postman Test
 ***AzureML HyperDrive Experiment Model Deployed***
 
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/RegisteredModel.png)
+
+
+***AzureML HyperDrive Experiment Service Enpoint Test***
+
+
+
+
 
 
 # =====================================
