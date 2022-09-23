@@ -11,18 +11,32 @@ Problem of Information overload need to be recognized and addressed.
 One of the answers to the problem is to filter out the noise(spam) in this case from SMS.
 
 
-### Context
+### Overview
 
 Spam is unsolicited and unwanted messages sent electronically  and whose content may be malicious. SMS spam is typically transmitted over a mobile network. SMS mode is more dangerous in many ways one is by the fact that SMS is usually regarded by the user as a safer, more trustworthy form of communication than other sources, e. g., emails.
 
+This problem is solved using three different approaches:
+
+        1. Using Azure AutoML Python SDK
+        2. Using Azure HyperDrive Prameter tuning
+        3. Using Keras Tensorflow and Keras tunner Neural Network 
 
 # =====================================
 # Auto ML using Python SDK
 # =====================================
 
-[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
+***[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)***
 
-AutoML SDK Architecture Flow
+
+***Azure AutoML Overview**
+
+![Azure AutoML Overview](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/MicrosoftAutoML.png)
+
+Azure AutoML helps find the best model that suits your data FAST! 
+With Automated machine learning we can focus on the testing of most accurate models and avoid testing a large range of less valuable models, as it retains only the ones we want.
+                                        -- Matthieu Boujonnier [Schneider Electric]
+
+***AutoML SDK Implementation Flow***
 
 ![AutoML SDK Architecture Flow](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/AutoMLArchitectuerFlow.png)
 
