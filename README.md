@@ -16,9 +16,9 @@ One of the answers to the problem is to filter out the noise(spam) in this case 
 Spam is unsolicited and unwanted messages sent electronically  and whose content may be malicious. SMS spam is typically transmitted over a mobile network. SMS mode is more dangerous in many ways one is by the fact that SMS is usually regarded by the user as a safer, more trustworthy form of communication than other sources, e. g., emails.
 
 
-
+# =====================================================
 # Auto ML using Python SDK
-
+# =====================================================
 
 [Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)
 
@@ -116,9 +116,9 @@ Postman Test
 
 ![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_postman_test2.png)
 
-# ==========================================================================
-
+# ==========================================================
 # Azure HyperDrive excution using Logistic Regression
+# ==========================================================
 
 ** SMS Spam using HyperDrive Logistic Regression 
 
@@ -132,8 +132,9 @@ Postman Test
 
 ![](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/RegisteredBestModel.png)
 
-
-## HyperParameter tuning Keras tuner
+# ========================================
+# HyperParameter tuning Keras tuner
+# ========================================
 
 [Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
 
