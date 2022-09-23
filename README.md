@@ -98,7 +98,7 @@ Now that you have several trained models ranked based on the metric you specifie
 
 ### Step 5: Deploy Best Model
 
-a. Use AutoML run get output to retrive best run. Using best run get model name. 
+a. Use AutoML run get output to retrieve best run. Using best run get model name. 
 
 b. Use AutoML run to register best model.
 
@@ -123,6 +123,7 @@ Postman Test
 
 ![Test Endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_postman_test2.png)
 
+
 # =====================================
 # Azure HyperDrive execution using Logistic Regression
 # =====================================
@@ -146,7 +147,7 @@ In this case below listed feature engineering techniques are engaged
 
         a. Elimination of stop words
 
-        b. Replacement of target attribute with numerics 1 for spam and 0 for ham.
+        b. Replacement of target attribute with numeric 1 for spam and 0 for ham.
 
         c. Clean text of any punctuations, whitespaces and web addresses.
 
@@ -160,13 +161,13 @@ In this case below listed feature engineering techniques are engaged
 
 ****Model Selection**** Logistic Regression sounds to be the most natural fit to binary Spam classification problem (citing whitepaper from International Journal in below references). 
         
-Logistic funtion is a S-shaped curve (also known as a sigmoid curve) that for a given set of input variables, produces an output between 0 and 1 which can be used to represent probability and with a given threshold would classify one way or the other. 
+Logistic function is a S-shaped curve (also known as a sigmoid curve) that for a given set of input variables, produces an output between 0 and 1 which can be used to represent probability and with a given threshold would classify one way or the other. 
 
 **HyperParameters**
 
 Overfitting is a significant issue in the field of data science that needs to handled carefully in order to build a robust and accurate model. Overfitting arises when a model tries to fit the training data so well that it cannot generalize to new observations. 
 
-Regularization techniques and streangth are to avoid Overfitting or UnderFitting model training. 
+Regularization techniques and strength are to avoid Overfitting or UnderFitting model training. 
 
 ***solver='liblinear'***
 
@@ -244,15 +245,31 @@ Postman Test
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/HyperDriveModelTest2.png)
 
 
+# Comparision and Conclusion
+
+***Azure AutoML run had an accuracy of 99% and AUC of 99%, whereas Hyperdrive run picked best model accuracy is 94% and AUC 95%***
+
+Both models had excelent performance but in the wild west of Spam world my next step as standout exercies is to look into Neural Network and Deep learning.
 
 # =====================================
 # HyperParameter tuning using Keras tuner
 # =====================================
 
-
+# Standout Exercies 
 
 [Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
 
+***Keras*** is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result as fast as possible is key to doing good research.
+
+***TensorFlow 2*** is an end-to-end, open-source machine learning platform. You can think of it as an infrastructure layer for differentiable programming. It combines four key abilities:
+
+Efficiently executing low-level tensor operations on CPU, GPU, or TPU.
+
+Computing the gradient of arbitrary differentiable expressions.
+
+Scaling computation to many devices, such as clusters of hundreds of GPUs.
+
+Exporting programs ("graphs") to external runtimes such as servers, browsers, mobile and embedded devices.
 
 
 ### References
@@ -265,3 +282,16 @@ Postman Test
 [](https://medium.com/microsoftazure/a-review-of-azure-automated-machine-learning-automl-5d2f98512406#:~:text=Azure%20AutoML%20is%20a%20cloud,pre%2Dprocess%20the%20input%20dataset.)
 
 [](https://azure.microsoft.com/mediahandler/files/resourcefiles/automated-ml/Automated%20ML%20Infographic.pdf)
+
+[](https://www.csie.ntu.edu.tw/~cjlin/papers/liblinear.pdf)
+
+[](https://www.cs.cmu.edu/~gpekhime/Projects/CSC2515/project.pdf)
+
+[](https://ijisrt.com/assets/upload/files/IJISRT21SEP728.pdf)
+
+[](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
+
+[](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification)
+
+
+
