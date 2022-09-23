@@ -143,12 +143,18 @@ After selection of the Dataset for your usecase, define configuration and constr
 ****Featurization**** is the process of applying techniques of Feature Engineering to the dataset that will help machine learning algorithm learn better.
 
 In this case below listed feature engineering techniques are engaged
+
         a. Elimination of stop words
+
         b. Replacement of target attribute with numerics 1 for spam and 0 for ham.
+
         c. Clean text of any punctuations, whitespaces and web addresses.
+
         d. Stemming using NLTK Snowball Stemmer. A process of reducing a word to its base word,such that words of similar kind lie under a common stem.
+
         e. TfidfVectorizer is an important NLP feature that converts text to a matrix of TF-IDF features.
-           (TF-IDF is an abbreviation of Term Frequency - Inverse Document Frequency)   
+           (TF-IDF is an abbreviation of Term Frequency - Inverse Document Frequency)  
+            
 
 
 ****Model Selection**** Logistic Regression sounds to be the most natural fit to binary Spam classification problem (citing whitepaper from International Journal in below references). 
