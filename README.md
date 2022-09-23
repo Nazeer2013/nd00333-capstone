@@ -199,6 +199,12 @@ A high value of C tells the model to give more weight to the training data. A lo
 
 ***max_iterint*** Maximum number of iterations taken for the solvers to converge.
 
+***Early termination policy***
+early_termination_policy = BanditPolicy(evaluation_interval=2,slack_factor=0.2)
+
+Bandit is an early termination policy based on slack factor/slack amount and evaluation interval. The policy early terminates any runs where the primary metric is not within the specified slack factor/slack amount with respect to the best performing training run.
+
+
 HyperDrive Selected ****Best run**** model ****hyperparameters**** are --C: 1.0 and --max_iter: 10
 
 
