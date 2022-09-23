@@ -120,20 +120,24 @@ Postman Test
 # Azure HyperDrive excution using Logistic Regression
 # =====================================
 
-## SMS Spam using HyperDrive Logistic Regression 
+## SMS Spam Experiment using HyperDrive Logistic Regression 
 
 [Azure ML Hyperdrive run Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/nb-lr-0921-v12.ipynb)
+
+***Azure HyperDrive Experiment***
 
 
 ![Azure ML Hyperdrive experiment running](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_12-39-03.png)
 
+
 ![Azure ML Hyperdrive experiment Accuracy plot runtime](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_12-39-34.png)
+
 
 ![Azure ML Hyperdrive experiment run complete.](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-26-43.png)
 
-![Azure ML Hyperdrive experiment complete](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-28-27.png)
 
 ![Azure ML Hyperdrive experiment complete](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-28-27.png)
+
 
 ![Azure ML Hyperdrive experiment done](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/2022-09-21_13-32-10.png)
 
@@ -142,6 +146,8 @@ Postman Test
 # =====================================
 # HyperParameter tuning Keras tuner
 # =====================================
+
+
 
 [Keras Deep Learning Model and HyperParameter tuning](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/TFKerasHyperParameterV2.ipynb)
 
