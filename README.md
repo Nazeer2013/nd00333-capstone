@@ -28,8 +28,11 @@ This problem is solved using three different approaches:
 ***[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)***
 
 > To execute notebook:
+>       
 >       a. Load dataset 'UdacityPrjEmailSpamDataSet'
+> 
 >       b. copy config.json to same folder and .ipynb notebook file.
+> 
 >       c. Update Subscription Id, Resource Group and Workspace.
 
 Azure AutoML helps find the best model that suits your data FAST! 
