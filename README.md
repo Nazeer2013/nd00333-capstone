@@ -27,6 +27,10 @@ This problem is solved using three different approaches:
 
 ***[Spam Detection Auto ML Python SDK Project Notebook link](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/notebook-smsspam-automl-0915-v1.ipynb)***
 
+> To execute notebook:
+>       a. Load dataset 'UdacityPrjEmailSpamDataSet'
+>       b. copy config.json to same folder and .ipynb notebook file.
+>       c. Update Subscription Id, Resource Group and Workspace.
 
 Azure AutoML helps find the best model that suits your data FAST! 
 
@@ -200,14 +204,17 @@ A high value of C tells the model to give more weight to the training data. A lo
 ***max_iterint*** Maximum number of iterations taken for the solvers to converge.
 
 ***Early termination policy***
-early_termination_policy = BanditPolicy(evaluation_interval=2,slack_factor=0.2)
+
+**early_termination_policy = BanditPolicy(evaluation_interval=2,slack_factor=0.2)**
 
 Bandit is an early termination policy based on slack factor/slack amount and evaluation interval. The policy early terminates any runs where the primary metric is not within the specified slack factor/slack amount with respect to the best performing training run.
 
 
 HyperDrive Selected ****Best run**** model ****hyperparameters**** are --C: 1.0 and --max_iter: 10
 
+***Model Object:***
 
+**model = LogisticRegression(solver='liblinear', penalty='l1', C=args.C, max_iter=args.max_iter)**
 
 ***AzureML HyperDrive Experiment Running***
 
@@ -263,7 +270,7 @@ Both models had excelent performance but in the wild west of Spam world my next 
 
 # Link to ScreenCast
 
-[Screen Cast](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/screencast/zoom_0.mp4)
+[Screen Cast]()
 
 
 # =====================================
@@ -301,7 +308,7 @@ Exporting programs ("graphs") to external runtimes such as servers, browsers, mo
 
 [CMU Project](https://www.cs.cmu.edu/~gpekhime/Projects/CSC2515/project.pdf)
 
-[Logistic Regression WP](https://ijisrt.com/assets/upload/files/IJISRT21SEP728.pdf)
+[Logistic Regression White Paper](https://ijisrt.com/assets/upload/files/IJISRT21SEP728.pdf)
 
 [Logistic Regression scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
 
