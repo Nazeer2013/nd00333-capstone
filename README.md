@@ -40,7 +40,7 @@ Azure AutoML helps find the best model that suits your data FAST!
 With Automated machine learning we can focus on the testing of most accurate models and avoid testing a large range of less valuable models, as it retains only the ones we want.
 
                                         -- Matthieu Boujonnier [Schneider Electric]
-                                        
+
 
 ***AutoML SDK Implementation Flow***
 
@@ -275,7 +275,7 @@ Both models had excelent performance but in the wild west of Spam world my next 
 
 # Link to ScreenCast
 
-[Screen Cast]()
+[Screen Cast](https://github.com/Nazeer2013/nd00333-capstone/tree/master/finalproject/screencast#:~:text=2%20minutes%20ago-,zoom_0.mp4,-screencast)
 
 
 # =====================================
