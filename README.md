@@ -150,6 +150,8 @@ Data is a CSV file with five cloumns, 5572 rows total size of 504KB. Column v1 i
 
 Best run Fitted Model parameters
 
+![AutoML Best Model parameters](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_model_params.png)
+
 
 'stackensembleclassifier',
         StackEnsembleClassifier(base....6327367346938775, 
