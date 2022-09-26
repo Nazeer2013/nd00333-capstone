@@ -3,6 +3,10 @@ Udacity AzureML Final Project
 
 *  [Feedback Response AutoML](#feedback-response-updates-automl-09-26-2022)
 
+*  [Feedback Response Hyperdrive run](#feedback-response-hyperdrive-run-updates-09-26-2022)
+  
+  
+
 # SMS Spam Detection using Azure Machine learning
 
 Problem of Information overload need to be recognized and addressed.
