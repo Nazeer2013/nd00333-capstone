@@ -1,0 +1,15 @@
+<bound method PipelineWithYTransformations.get_params of PipelineWithYTransformations(Pipeline={'memory': None,
+                                       'steps': [('datatransformer',
+                                                  DataTransformer(enable_dnn=False, enable_feature_sweeping=True, is_cross_validation=True, working_dir='/mnt/batch/tasks/shared/LS_root/mounts/clusters/nahmed30-computeinstance/code/Users/nahmed30/1WIP/finalproject')),
+                                                 ('stackensembleclassifier',
+                                                  StackEnsembleClassifier(base...(steps=[('sparsenormalizer', Normalizer()), ('randomforestclassifier', RandomForestClassifier(class_weight='balanced', max_features='sqrt', min_samples_leaf=0.01, min_samples_split=0.01, n_jobs=1, oob_score=True))]))], meta_learner=LogisticRegressionCV(scoring=Scorer(metric='accuracy'))))],
+                                       'verbose': False},
+                             y_transformer={},
+                             y_transformer_name='LabelEncoder')>
+-------------------------------------------------------------------------------------
+Pipeline(steps=[('datatransformer',
+                 DataTransformer(enable_dnn=False, enable_feature_sweeping=True, is_cross_validation=True, working_dir='/mnt/batch/tasks/shared/LS_root/mounts/clusters/nahmed30-computeinstance/code/Users/nahmed30/1WIP/finalproject')),
+                ('stackensembleclassifier',
+                 StackEnsembleClassifier(base_learners=[('25', Pipeline(steps=[('maxabsscale...ining_param_dict={'processing_unit_type': 'cpu'})))])), ('15', Pipeline(steps=[('sparsenormalizer', Normalizer()), ('randomforestclassifier', RandomForestClassifier(class_weight='balanced', max_features='sqrt', min_samples_leaf=0.01, min_samples_split=0.01, n_jobs=1, oob_score=True))]))], meta_learner=LogisticRegressionCV(scoring=Scorer(metric='accuracy'))))])
+Y_transformer(['LabelEncoder', LabelEncoder()])
+                             

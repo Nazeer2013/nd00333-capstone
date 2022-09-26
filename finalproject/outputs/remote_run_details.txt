@@ -1,0 +1,219 @@
+Current status: FeaturesGeneration. Generating features for the dataset.
+Current status: DatasetBalancing. Performing class balancing sweeping
+Current status: DatasetCrossValidationSplit. Generating individually featurized CV splits.
+Current status: ModelSelection. Beginning model selection.
+
+********************************************************************************************
+DATA GUARDRAILS: 
+
+TYPE:         Cross validation
+STATUS:       DONE
+DESCRIPTION:  In order to accurately evaluate the model(s) trained by AutoML, we leverage a dataset that the model is not trained on. Hence, if the user doesn't provide an explicit validation dataset, a part of the training dataset is used to achieve this. For smaller datasets (fewer than 20,000 samples), cross-validation is leveraged, else a single hold-out set is split from the training data to serve as the validation dataset. Hence, for your input data we leverage cross-validation with 10 folds, if the number of training samples are fewer than 1000, and 3 folds in all other cases.
+              Learn more about cross validation: https://aka.ms/AutomatedMLCrossValidation
+DETAILS:      
++------------------------------+
+|Number of folds               |
++==============================+
+|3                             |
++------------------------------+
+
+********************************************************************************************
+
+TYPE:         Class balancing detection
+STATUS:       ALERTED
+DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
+              Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
+DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
++------------------------------+--------------------------------+--------------------------------------+
+|Size of the smallest class    |Name/Label of the smallest class|Number of samples in the training data|
++==============================+================================+======================================+
+|747                           |spam                            |5572                                  |
++------------------------------+--------------------------------+--------------------------------------+
+
+********************************************************************************************
+
+TYPE:         Missing feature values imputation
+STATUS:       PASSED
+DESCRIPTION:  No feature missing values were detected in the training data.
+              Learn more about missing value imputation: https://aka.ms/AutomatedMLFeaturization
+
+********************************************************************************************
+
+TYPE:         High cardinality feature detection
+STATUS:       PASSED
+DESCRIPTION:  Your inputs were analyzed, and no high cardinality features were detected.
+              Learn more about high cardinality feature handling: https://aka.ms/AutomatedMLFeaturization
+
+********************************************************************************************
+
+********************************************************************************************
+ITER: The iteration being evaluated.
+PIPELINE: A summary description of the pipeline being evaluated.
+DURATION: Time taken for the current iteration.
+METRIC: The result of computing score on the fitted pipeline.
+BEST: The best observed score thus far.
+********************************************************************************************
+
+ ITER   PIPELINE                                       DURATION            METRIC      BEST
+    0   MaxAbsScaler LightGBM                          0:00:32             0.9876    0.9876
+    1   MaxAbsScaler XGBoostClassifier                 0:01:02             0.9853    0.9876
+    2   MaxAbsScaler ExtremeRandomTrees                0:00:19             0.9709    0.9876
+    3   SparseNormalizer XGBoostClassifier             0:00:22             0.9763    0.9876
+    4   MaxAbsScaler LightGBM                          0:00:21             0.9794    0.9876
+    7   MaxAbsScaler LogisticRegression                0:00:25             0.9885    0.9885
+    5   MaxAbsScaler LightGBM                          0:00:21             0.9447    0.9885
+    8   StandardScalerWrapper ExtremeRandomTrees       0:00:23             0.9614    0.9885
+   10   SparseNormalizer LightGBM                      0:00:22             0.9512    0.9885
+    6   StandardScalerWrapper XGBoostClassifier        0:00:22             0.9838    0.9885
+    9   StandardScalerWrapper XGBoostClassifier        0:00:23             0.9826    0.9885
+   11   StandardScalerWrapper XGBoostClassifier        0:00:24             0.9819    0.9885
+   12   MaxAbsScaler LogisticRegression                0:00:26             0.9898    0.9898
+   13   MaxAbsScaler SGD                               0:00:20             0.9901    0.9901
+   14   StandardScalerWrapper XGBoostClassifier        0:00:27             0.9786    0.9901
+   15   SparseNormalizer RandomForest                  0:00:22             0.9742    0.9901
+   16   StandardScalerWrapper LogisticRegression       0:00:26             0.9882    0.9901
+   17   StandardScalerWrapper RandomForest             0:00:34             0.9718    0.9901
+   18   StandardScalerWrapper XGBoostClassifier        0:00:35             0.9837    0.9901
+   19   TruncatedSVDWrapper RandomForest               0:00:55             0.9462    0.9901
+   20   TruncatedSVDWrapper RandomForest               0:01:07             0.9749    0.9901
+   22   SparseNormalizer XGBoostClassifier             0:00:38             0.9751    0.9901
+   21   StandardScalerWrapper XGBoostClassifier        0:00:43             0.9846    0.9901
+   23   StandardScalerWrapper LogisticRegression       0:00:43             0.9763    0.9901
+   25   MaxAbsScaler SGD                               0:00:33             0.9912    0.9912
+   26   MaxAbsScaler LogisticRegression                0:00:38             0.9891    0.9912
+   24   SparseNormalizer XGBoostClassifier             0:00:54             0.9856    0.9912
+   27   MaxAbsScaler LogisticRegression                0:00:37             0.9887    0.9912
+   30   SparseNormalizer SGD                           0:00:34             0.3741    0.9912
+   31   StandardScalerWrapper XGBoostClassifier        0:00:36             0.9528    0.9912
+   28   StandardScalerWrapper XGBoostClassifier        0:03:51             0.9840    0.9912
+   33   MaxAbsScaler LogisticRegression                0:03:30             0.9896    0.9912
+   34   MaxAbsScaler ExtremeRandomTrees                0:00:50             0.9628    0.9912
+   35   MaxAbsScaler SGD                               0:00:33             0.8659    0.9912
+   36   MaxAbsScaler LightGBM                          0:00:35             0.9627    0.9912
+   37   MaxAbsScaler LogisticRegression                0:00:37             0.9892    0.9912
+   38   MaxAbsScaler SGD                               0:00:33             0.9905    0.9912
+   29   StandardScalerWrapper LogisticRegression       0:11:06                nan    0.9912
+   32   StandardScalerWrapper LogisticRegression       0:09:05                nan    0.9912
+   40    StackEnsemble                                 0:01:00             0.9925    0.9925
+   39    VotingEnsemble                                0:01:11             0.9910    0.9925
+{'runId': 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434',
+ 'target': 'cpu-cluster',
+ 'status': 'Completed',
+ 'startTimeUtc': '2022-09-25T02:51:18.289709Z',
+ 'endTimeUtc': '2022-09-25T03:12:19.025853Z',
+ 'services': {},
+ 'warnings': [{'source': 'JasmineService',
+   'message': 'No scores improved over last 10 iterations, so experiment stopped early. This early stopping behavior can be disabled by setting enable_early_stopping = False in AutoMLConfig for notebook/python SDK runs.'}],
+ 'properties': {'num_iterations': '1000',
+  'training_type': 'TrainFull',
+  'acquisition_function': 'EI',
+  'primary_metric': 'accuracy',
+  'train_split': '0',
+  'acquisition_parameter': '0',
+  'num_cross_validation': None,
+  'target': 'cpu-cluster',
+  'AMLSettingsJsonString': '{"path":null,"name":"SMSspam-aml-experiment-v2","subscription_id":"16bc73b5-82be-47f2-b5ab-f2373344794c","resource_group":"epe-poc-nazeer","workspace_name":"nahmed30-azureml-workspace","region":"centralus","compute_target":"cpu-cluster","spark_service":null,"azure_service":"remote","many_models":false,"pipeline_fetch_max_batch_size":1,"enable_batch_run":true,"enable_run_restructure":false,"start_auxiliary_runs_before_parent_complete":false,"enable_code_generation":false,"iterations":1000,"primary_metric":"accuracy","task_type":"classification","positive_label":null,"data_script":null,"test_size":0.0,"test_include_predictions_only":false,"validation_size":0.0,"n_cross_validations":null,"y_min":null,"y_max":null,"num_classes":null,"featurization":"auto","_ignore_package_version_incompatibilities":false,"is_timeseries":false,"max_cores_per_iteration":1,"max_concurrent_iterations":3,"iteration_timeout_minutes":null,"mem_in_mb":null,"enforce_time_on_windows":false,"experiment_timeout_minutes":20,"experiment_exit_score":null,"partition_column_names":null,"whitelist_models":null,"blacklist_algos":["TensorFlowLinearClassifier","TensorFlowDNN"],"supported_models":["XGBoostClassifier","AveragedPerceptronClassifier","TensorFlowDNN","MultinomialNaiveBayes","TabnetClassifier","LinearSVM","LightGBM","LogisticRegression","GradientBoosting","BernoulliNaiveBayes","SGD","KNN","TensorFlowLinearClassifier","RandomForest","SVM","DecisionTree","ExtremeRandomTrees"],"private_models":[],"auto_blacklist":true,"blacklist_samples_reached":false,"exclude_nan_labels":true,"verbosity":20,"_debug_log":"azureml_automl.log","show_warnings":false,"model_explainability":true,"service_url":null,"sdk_url":null,"sdk_packages":null,"enable_onnx_compatible_models":false,"enable_split_onnx_featurizer_estimator_models":false,"vm_type":"STANDARD_DS12_V2","telemetry_verbosity":20,"send_telemetry":true,"enable_dnn":false,"scenario":"SDK-1.13.0","environment_label":null,"save_mlflow":false,"enable_categorical_indicators":false,"force_text_dnn":false,"enable_feature_sweeping":true,"enable_early_stopping":true,"early_stopping_n_iters":10,"arguments":null,"dataset_id":"3527a22f-75c2-4ae0-81f9-28549e60c632","hyperdrive_config":null,"validation_dataset_id":null,"run_source":null,"metrics":null,"enable_metric_confidence":false,"enable_ensembling":true,"enable_stack_ensembling":true,"ensemble_iterations":15,"enable_tf":false,"enable_subsampling":null,"subsample_seed":null,"enable_nimbusml":false,"enable_streaming":false,"force_streaming":false,"track_child_runs":true,"allowed_private_models":[],"label_column_name":"v1","weight_column_name":null,"cv_split_column_names":null,"enable_local_managed":false,"_local_managed_run_id":null,"cost_mode":1,"lag_length":0,"metric_operation":"maximize","preprocess":true}',
+  'DataPrepJsonString': '{\\"training_data\\": {\\"datasetId\\": \\"3527a22f-75c2-4ae0-81f9-28549e60c632\\"}, \\"datasets\\": 0}',
+  'EnableSubsampling': None,
+  'runTemplate': 'AutoML',
+  'azureml.runsource': 'automl',
+  'display_task_type': 'classification',
+  'dependencies_versions': '{"azureml-dataprep-native": "38.0.0", "azureml-dataprep": "3.1.1", "azureml-dataprep-rslex": "2.5.2", "azureml-mlflow": "1.41.0", "azureml-training-tabular": "1.41.0", "azureml-train-core": "1.41.0", "azureml-contrib-dataset": "1.41.0", "azureml-pipeline-steps": "1.41.0", "azureml-pipeline-core": "1.41.0", "azureml-pipeline": "1.41.0", "azureml-cli-common": "1.41.0", "azureml-explain-model": "1.41.0", "azureml-automl-dnn-nlp": "1.41.0", "azureml-opendatasets": "1.41.0", "azureml-train-restclients-hyperdrive": "1.41.0", "azureml-dataset-runtime": "1.41.0", "azureml-tensorboard": "1.41.0", "azureml-contrib-automl-pipeline-steps": "1.41.0", "azureml-train-automl-client": "1.41.0", "azureml-automl-core": "1.41.0", "azureml-sdk": "1.41.0", "azureml-contrib-services": "1.41.0", "azureml-contrib-server": "1.41.0", "azureml-accel-models": "1.41.0", "azureml-core": "1.41.0", "azureml-train-automl-runtime": "1.41.0", "azureml-contrib-notebook": "1.41.0", "azureml-train": "1.41.0", "azureml-interpret": "1.41.0", "azureml-defaults": "1.41.0", "azureml-automl-runtime": "1.41.0", "azureml-datadrift": "1.41.0", "azureml-contrib-reinforcementlearning": "1.41.0", "azureml-widgets": "1.41.0", "azureml-train-automl": "1.41.0", "azureml-contrib-fairness": "1.41.0", "azureml-telemetry": "1.41.0", "azureml-contrib-pipeline-steps": "1.41.0", "azureml-responsibleai": "1.41.0", "azureml-inference-server-http": "0.4.13", "azureml-samples": "0+unknown"}',
+  '_aml_system_scenario_identification': 'Remote.Parent',
+  'ClientType': 'SDK',
+  'environment_cpu_name': 'AzureML-AutoML',
+  'environment_cpu_label': 'prod',
+  'environment_gpu_name': 'AzureML-AutoML-GPU',
+  'environment_gpu_label': 'prod',
+  'root_attribution': 'automl',
+  'attribution': 'AutoML',
+  'Orchestrator': 'AutoML',
+  'CancelUri': 'https://centralus.api.azureml.ms/jasmine/v1.0/subscriptions/16bc73b5-82be-47f2-b5ab-f2373344794c/resourceGroups/epe-poc-nazeer/providers/Microsoft.MachineLearningServices/workspaces/nahmed30-azureml-workspace/experimentids/af22ecf3-f11d-44da-90b5-a49304697c78/cancel/AutoML_327ae399-1549-40e2-a764-538b6d6d8434',
+  'ClientSdkVersion': '1.45.0',
+  'snapshotId': '00000000-0000-0000-0000-000000000000',
+  'SetupRunId': 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_setup',
+  'SetupRunContainerId': 'dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_setup',
+  'FeaturizationRunJsonPath': 'featurizer_container.json',
+  'FeaturizationRunId': 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_featurize',
+  'ProblemInfoJsonString': '{"dataset_num_categorical": 0, "is_sparse": true, "subsampling": false, "has_extra_col": true, "dataset_classes": 2, "dataset_features": 66602, "dataset_samples": 5572, "single_frequency_class_detected": false}',
+  'ModelExplainRunId': 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_ModelExplain'},
+ 'inputDatasets': [{'dataset': {'id': '3527a22f-75c2-4ae0-81f9-28549e60c632'}, 'consumptionDetails': {'type': 'RunInput', 'inputName': 'training_data', 'mechanism': 'Direct'}}],
+ 'outputDatasets': [],
+ 'logFiles': {},
+ 'submittedBy': 'ed84bd8b-0d92-4b6d-be98-b0adcbd37cc0'}
+Save the best model
+[16]
+1
+best_run, fitted_model = remote_run.get_output()
+WARNING:root:The version of the SDK does not match the version the model was trained on.
+WARNING:root:The consistency in the result may not be guaranteed.
+WARNING:root:Package:azureml-automl-core, training version:1.45.0, current version:1.41.0
+Package:azureml-automl-runtime, training version:1.45.0, current version:1.41.0
+Package:azureml-core, training version:1.45.0, current version:1.41.0
+Package:azureml-dataprep, training version:4.2.2, current version:3.1.1
+Package:azureml-dataprep-rslex, training version:2.8.1, current version:2.5.2
+Package:azureml-dataset-runtime, training version:1.45.0, current version:1.41.0
+Package:azureml-defaults, training version:1.45.0, current version:1.41.0
+Package:azureml-inference-server-http, training version:0.7.5, current version:0.4.13
+Package:azureml-interpret, training version:1.45.0, current version:1.41.0
+Package:azureml-mlflow, training version:1.45.0, current version:1.41.0
+Package:azureml-pipeline-core, training version:1.45.0, current version:1.41.0
+Package:azureml-responsibleai, training version:1.45.0, current version:1.41.0
+Package:azureml-telemetry, training version:1.45.0, current version:1.41.0
+Package:azureml-train-automl-client, training version:1.45.0, current version:1.41.0
+Package:azureml-train-automl-runtime, training version:1.45.0, current version:1.41.0
+Package:azureml-train-core, training version:1.45.0, current version:1.41.0
+Package:azureml-train-restclients-hyperdrive, training version:1.45.0, current version:1.41.0
+Package:azureml-training-tabular, training version:1.45.0, current version:1.41.0
+WARNING:root:Please ensure the version of your local conda dependencies match the version on which your model was trained in order to properly retrieve your model.
+
+
+[24]
+1
+best_run.get_properties()
+{'runTemplate': 'automl_child',
+ 'pipeline_id': '__AutoML_Stack_Ensemble__',
+ 'pipeline_spec': '{"pipeline_id":"__AutoML_Stack_Ensemble__","objects":[{"module":"azureml.train.automl.stack_ensemble","class_name":"StackEnsemble","spec_class":"sklearn","param_args":[],"param_kwargs":{"automl_settings":"{\'task_type\':\'classification\',\'primary_metric\':\'accuracy\',\'verbosity\':20,\'ensemble_iterations\':15,\'is_timeseries\':False,\'name\':\'SMSspam-aml-experiment-v2\',\'compute_target\':\'cpu-cluster\',\'subscription_id\':\'16bc73b5-82be-47f2-b5ab-f2373344794c\',\'region\':\'centralus\',\'spark_service\':None}","ensemble_run_id":"AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40","experiment_name":"SMSspam-aml-experiment-v2","workspace_name":"nahmed30-azureml-workspace","subscription_id":"16bc73b5-82be-47f2-b5ab-f2373344794c","resource_group_name":"epe-poc-nazeer"}}]}',
+ 'training_percent': '100',
+ 'predicted_cost': None,
+ 'iteration': '40',
+ '_aml_system_scenario_identification': 'Remote.Child',
+ '_azureml.ComputeTargetType': 'amlctrain',
+ 'ContentSnapshotId': '8dc9e3b0-c66c-48fc-a52f-cda0e268f2f3',
+ 'ProcessInfoFile': 'azureml-logs/process_info.json',
+ 'ProcessStatusFile': 'azureml-logs/process_status.json',
+ 'run_preprocessor': '',
+ 'run_algorithm': 'StackEnsemble',
+ 'ensembled_iterations': '[25, 38, 13, 12, 33, 0, 15]',
+ 'ensembled_algorithms': "['SGD', 'SGD', 'SGD', 'LogisticRegression', 'LogisticRegression', 'LightGBM', 'RandomForest']",
+ 'ensembled_run_ids': "['AutoML_327ae399-1549-40e2-a764-538b6d6d8434_25', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_38', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_13', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_12', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_33', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_0', 'AutoML_327ae399-1549-40e2-a764-538b6d6d8434_15']",
+ 'ensemble_weights': '[0.42857142857142855, 0.21428571428571427, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142, 0.07142857142857142]',
+ 'best_individual_pipeline_score': '0.9912059973811017',
+ 'best_individual_iteration': '25',
+ 'model_output_path': 'outputs/model.pkl',
+ 'conda_env_data_location': 'aml://artifact/ExperimentRun/dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40/outputs/conda_env_v_1_0_0.yml',
+ 'model_data_location': 'aml://artifact/ExperimentRun/dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40/outputs/model.pkl',
+ 'model_size_on_disk': '14955102',
+ 'scoring_data_location': 'aml://artifact/ExperimentRun/dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40/outputs/scoring_file_v_1_0_0.py',
+ 'scoring_data_location_v2': 'aml://artifact/ExperimentRun/dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40/outputs/scoring_file_v_2_0_0.py',
+ 'scoring_data_location_pbi': 'aml://artifact/ExperimentRun/dcid.AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40/outputs/scoring_file_pbi_v_1_0_0.py',
+ 'model_exp_support': 'True',
+ 'pipeline_graph_version': '1.0.0',
+ 'model_name': 'AutoML327ae399140',
+ 'score': '0.9924622144625239',
+ 'score_table': 'NaN',
+ 'run_properties': "base_learners=[('25', Pipeline(memory=None, steps=[('maxabsscaler', MaxAbsScaler(copy=True",
+ 'pipeline_script': '{"pipeline_id":"__AutoML_Stack_Ensemble__","objects":[{"module":"azureml.train.automl.stack_ensemble","class_name":"StackEnsemble","spec_class":"sklearn","param_args":[],"param_kwargs":{"automl_settings":"{\'task_type\':\'classification\',\'primary_metric\':\'accuracy\',\'verbosity\':20,\'ensemble_iterations\':15,\'is_timeseries\':False,\'name\':\'SMSspam-aml-experiment-v2\',\'compute_target\':\'cpu-cluster\',\'subscription_id\':\'16bc73b5-82be-47f2-b5ab-f2373344794c\',\'region\':\'centralus\',\'spark_service\':None}","ensemble_run_id":"AutoML_327ae399-1549-40e2-a764-538b6d6d8434_40","experiment_name":"SMSspam-aml-experiment-v2","workspace_name":"nahmed30-azureml-workspace","subscription_id":"16bc73b5-82be-47f2-b5ab-f2373344794c","resource_group_name":"epe-poc-nazeer"}}]}',
+ 'training_type': 'MeanCrossValidation',
+ 'fit_time': '26',
+ 'goal': 'accuracy_max',
+ 'primary_metric': 'accuracy',
+ 'errors': '{}',
+ 'onnx_model_resource': '{}',
+ 'dependencies_versions': '{"azureml-dataprep-native": "38.0.0", "azureml-dataprep": "4.2.2", "azureml-dataprep-rslex": "2.8.1", "azureml-telemetry": "1.45.0", "azureml-automl-runtime": "1.45.0", "azureml-core": "1.45.0", "azureml-mlflow": "1.45.0", "azureml-responsibleai": "1.45.0", "azureml-interpret": "1.45.0", "azureml-train-core": "1.45.0", "azureml-automl-core": "1.45.0", "azureml-dataset-runtime": "1.45.0", "azureml-train-automl-client": "1.45.0", "azureml-train-automl-runtime": "1.45.0", "azureml-train-restclients-hyperdrive": "1.45.0", "azureml-training-tabular": "1.45.0", "azureml-pipeline-core": "1.45.0", "azureml-defaults": "1.45.0", "azureml-inference-server-http": "0.7.5"}',
+ 'num_cores': '4',
+ 'num_logical_cores': '4',
+ 'peak_memory_usage': '4271088',
+ 'vm_configuration': 'x86_64',
+ 'core_hours': '0.015515463333333332',
+ 'feature_skus': 'automatedml_sdk_guardrails'}
