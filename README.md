@@ -153,21 +153,6 @@ Best run Fitted Model parameters
 ![AutoML Best Model parameters](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_model_params.png)
 
 
-'stackensembleclassifier',
-        StackEnsembleClassifier(base....6327367346938775, 
-                                class_weight='balanced', 
-                                eta0=0.01, 
-                                fit_intercept=False, 
-                                l1_ratio=0.8571428571428571, 
-                                learning_rate='constant', 
-                                loss='hinge', 
-                                max_iter=1000, 
-                                penalty='none', 
-                                power_t=0.2222222222222222, 
-                                tol=0.001))]))], 
-                                meta_learner=LogisticRegressionCV(
-                                        scoring=Scorer(metric='accuracy'))))],
-                                       'verbose': False}
 
 
 
