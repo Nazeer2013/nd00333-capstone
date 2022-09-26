@@ -172,7 +172,7 @@ Best run Fitted Model parameters
 
 AutoML run Confusion matrix:
 
-[AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix_0926.png)
+![AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix_0926.png)
 
 
 
