@@ -312,13 +312,12 @@ Both models had excelent performance but in the wild west of Spam world my next 
 
 Screenshot of Hyperdrive run active model endpoint
 
-[Screenshot of Hyperdrive run active model endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/DeployedEnpointHyperdrive.png)
+![Screenshot of Hyperdrive run active model endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/DeployedEnpointHyperdrive.png)
 
 
 Hyperdrive run file containing the environment details
 
-
-[Hyperdrive run file containing the environment details](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/hyperdrive_conda_env_yml.png)
+![Hyperdrive run file containing the environment details](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/hyperdrive_conda_env_yml.png)
 
 # =====================================
 # HyperParameter tuning using Keras tuner
