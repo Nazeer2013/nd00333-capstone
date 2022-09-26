@@ -170,11 +170,15 @@ Best run Fitted Model parameters
 
 
 
-AutoML run Confusion matrix:
+***Current performance of AutoML run - Confusion matrix:***
 
 ![AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix_0926.png)
 
 
+***Azure AutoML future improvements***
+
+
+[Azure AutoML future improvements](https://learn.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls)
 
 
 # =====================================
