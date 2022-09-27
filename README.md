@@ -173,7 +173,7 @@ Please refer to the notebook link below for the captured details:
 
 ***Current performance of AutoML run - Confusion matrix:***
 
-![AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix_0926.png)
+![AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix.png)
 
 Question of how well your model performs on new __unseen data__? Better the model, better it performs on unseen data. 
 
@@ -215,8 +215,7 @@ When doing CV, you provide validation dataset, and automated ML train your model
 
 ***Azure AutoML future improvements***
 
-
-[Azure AutoML future improvements](https://learn.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls)
+*Selecting and Combining one or more effective techniques can help improve your model performance. In certain cases it could also be totally new __innovative approach__ from an out of the box thinking specific to your problem can result in imporved outcomes*. 
 
 
 # =====================================
