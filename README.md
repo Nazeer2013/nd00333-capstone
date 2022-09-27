@@ -230,6 +230,11 @@ When doing CV, you provide validation dataset, and automated ML train your model
 
 __Early Stopping__ to avoid overtraining.
 
+## Underfitting 
+
+Underfitting can also be a problem in machine learning when a model is too simple and it trained with too few features or is regularized too much. This is generally not an issue with automated ml.
+
+To address underfitting of model you need to increase training duration, add more features and decrease regularization.
 
 ***Azure AutoML future improvements***
 
