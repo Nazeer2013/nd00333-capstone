@@ -192,7 +192,7 @@ Better the model, better it performs on unseen data.
 
 The problem of __Data imbalance__ and __Overfitting__ is in the way of building good machine learning model. 
 
-__Imbalanced Data__ refers to datasets where the target class has an unseen distribution of observations. i.e., one class (majority class) has a very high number of observations and the other (minority class) has very low number of observations.
+__Imbalanced Data__ refers to datasets where the target class has an uneven distribution of observations. i.e., one class (majority class) has a very high number of samples and the other (minority class) has very low number of samples.
 
 __Overfitting__ occurs when a model fits the training data too well, and as a result can't accurately predict on new unseen test data
 
@@ -200,7 +200,7 @@ __Overfitting__ occurs when a model fits the training data too well, and as a re
 
 Most of the Machine learning algorithms expect __balanced data__ input to perform better on unseen data.
 
-In our example: There's only 13.4% __spam__ samples in our dataset.
+In our example: There's only 13.4% __spam__ samples in the dataset.
 
 Problem at hand is to detect __spam__ hence to properly train the algorithm, one can think of is to oversample 'spam' type messages. There are different techniques to do this one is by simply making more copies of minority class data (not a very perfect approach)
 
@@ -217,7 +217,7 @@ __Removing of noisy or least important features__ from the model reduces the com
 In this  case it make sense to drop additional columns Column3, Column4 and Column5 from training dataset if it does not have influence on ham/spam determination and its not used during the testing of model.
 
 
-### There are also  built in capabilities of Automated ML to help deal with imbalanced data and overfitting
+### There are also built in automated capabilities of Automated ML to help deal with imbalanced data and overfitting
 
 A __weight column__: automated ML weights as input, causing classes in the data to be weighted up or down, which can be used to make a class more or less "important". __minority class__ will be given more weight to balance overall outcome of the model.
 
