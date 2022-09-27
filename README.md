@@ -1,5 +1,4 @@
-# nd00333-capstone
-Udacity AzureML Final Project
+# Udacity AzureML Final Project
 
 ## Content
 
