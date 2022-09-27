@@ -228,6 +228,9 @@ Automated ML has built in __Regularization__ of minimizing a cost function to pe
 __Cross-validation__ built in AutomatedML is the process of taking many subsets of your full training data and training a model on each subset. Pick the subset that gives high accuracy an
 When doing CV, you provide validation dataset, and automated ML train your model and tune hyperparaments. 
 
+__Early Stopping__ to avoid overtraining.
+
+
 ***Azure AutoML future improvements***
 
 *Selecting and Fine tuning using one or more effective techniques can help improve your model performance. In certain cases, it could also be totally new __innovative approach__ specific to the problem can result in improved outcomes. Learning and improving for experimentation is the key*. 
