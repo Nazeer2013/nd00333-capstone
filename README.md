@@ -214,6 +214,9 @@ __Prevent target leak__ this occurs when your model have access to data that it 
 
 __Removing of noisy or least important features__ from the model reduces the complexity of the model and in turn help prevent overfitting.
 
+In this  case it make sense to drop additional columns Column3, Column4 and Column5 from training dataset if it does not have influence on ham/spam determination and its not used during the testing of model.
+
+
 ### There are also  built in capabilities of Automated ML to help deal with imbalanced data and overfitting
 
 A __weight column__: automated ML weights as input, causing classes in the data to be weighted up or down, which can be used to make a class more or less "important". __minority class__ will be given more weight to balance overall outcome of the model.
