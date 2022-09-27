@@ -153,6 +153,8 @@ Please refer to the notebook link below for the captured details:
 
 ***Data is a CSV file with five cloumns, 5572 rows total size of 504KB. Column v1 identifies message as ham or spam, column v2 is the message and column3, column4, column5 are follow-up messages. Each of object type text.***
 
+**86.6% of data is 'ham' and 13.4% data is 'spam'**
+
 
 ![Dataset Overview](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_dataset_overview_0926_1.png)
 
@@ -173,6 +175,42 @@ Please refer to the notebook link below for the captured details:
 
 ![AutoML Confusion matrix](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/automl_images/automl_confusion_matrix_0926.png)
 
+Question of how well your model performs on new __unseen data__? Better the model, better it performs on unseen data. 
+
+The problem of __data imbalance__ and __Overfitting__ is in the way of good model. 
+
+
+__Overfitting__ occurs when a model fits the training data too well, and as a result can't accurately predict on unseen test data
+
+
+### How to address Data imbalance and Overfitting of model 
+
+Most of the Machine learning algoritms expect __balanced data__ input to perform better on unseen data.
+
+In our example: There's only 13.4% __spam__ samples in our dataset.
+
+Problem at hand is to detect __spam__ hence to properly train the algorithm one can think of is oversample spam type messages. There are different techniques to do this one is by simply making more copies of minority class data (not a very perfect approach)
+
+ __Synthetic Minority Over-sampling Technique__ or __SMOTE__. Is much an improvement over simply duplicating minority class is to synthesize new examples from the minority class using k-nearest neighbors synthetic technique.
+
+Adding samples of spam to matchup to the size of ham. Using above technique can help address data imbalance problem. 
+
+Other techniques can also be simply __Use of more data__  this helps prevent overfitting. Usage of more data helps model reach solutions that are more flexible as it accommodate more coditions. 
+
+__Prevent target leak__ this occurs when your model have access to data that it normally doesn't at the time of prediction. Due to this model may have inflated performance during trainging but poor performance when deployed to predict on real data.  
+
+__Removing of noisy or least important features__ from the model reduces the complexity of the model and in turn help prevent overfitting.
+
+### There are also  built in capabilities of Automated ML to help deal with imbalanced data and overfitting
+
+A __weight column__: automated ML weights as input, causing classes in the data to be weighted up or down, which can be used to make a class more or less "important". __minority class__ will be given more weight to balance overall outcome of the model.
+
+The algorithms used by automated ML detect imbalance when the number of samples in the minority class is equal to or fewer than 20% of the number of samples in the majority class.
+
+Automated ML has built in __Regularization__ of minimizing a cost function to penalize complex and overfitted models.
+
+__Cross-validation__ built in AutomatedML is the process of taking many subsets of your full training data and training a model on each subset. Pick the subset that gives high accuracy an
+When doing CV, you provide validation dataset, and automated ML train your model and tune hyperparaments. 
 
 ***Azure AutoML future improvements***
 
@@ -327,11 +365,11 @@ Both models had excelent performance but in the wild west of Spam world my next 
 [Screen Cast](https://github.com/Nazeer2013/nd00333-capstone/tree/master/finalproject/screencast#:~:text=2%20minutes%20ago-,zoom_0.mp4,-screencast)
 
 
-## ==================================================
+## =================================================
 
 ## Feedback response Hyperdrive run updates 09-26-2022
 
-**1.Screenshot of Hyperdrive run active model endpoint**
+**1. Screenshot of Hyperdrive run active model endpoint**
 
 ![Screenshot of Hyperdrive run active model endpoint](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/DeployedEnpointHyperdrive.png)
 
@@ -381,6 +419,9 @@ Exporting programs ("graphs") to external runtimes such as servers, browsers, mo
 [Logistic Regression scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
 
 [Kaggle Spam and Ham classificaton](https://www.kaggle.com/code/rumbleftw/beginner-friendly-spam-ham-sms-classification)
+
+
+[dentify-models-with-imbalanced-data](https://learn.microsoft.com/en-us/azure/machine-learning/concept-manage-ml-pitfalls#identify-models-with-imbalanced-data)
 
 
 
