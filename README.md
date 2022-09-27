@@ -1,11 +1,19 @@
 # nd00333-capstone
 Udacity AzureML Final Project
 
-## Feedback Response
+## Content
 
-*  [Feedback Response AutoML](#feedback-response-updates-automl-09-26-2022)
+*  [Overview](#Overview)
 
-*  [Feedback Response Hyperdrive run](#feedback-response-hyperdrive-run-updates-09-26-2022)
+*  [Azure Machine Learning Architecture](#Azure-Machine-Learning-Architecture)
+
+*  [Auto ML using Python SDK](#Auto-ML-using-Python-SDK)
+  
+*  [Azure HyperDrive execution using Logistic Regression](#Azure-HyperDrive-execution-using-Logistic-Regression)
+  
+*  [HyperParameter tuning using Neural Networks and Deep Learning](#HyperParameter-tuning-using-Neural-Networks-and-Deep-Learning)
+
+
   
 
 # SMS Spam Detection using Azure Machine learning
@@ -26,6 +34,12 @@ This problem is solved using three different approaches:
         1. Using Azure AutoML Python SDK
         2. Using Azure HyperDrive Parameter tuning
         3. Using Keras Tensorflow and Keras tuner Neural Network 
+
+# ====================================
+# Azure Machine Learning Architecture
+# ====================================
+
+![Azure Machine Learning Architecture](https://github.com/Nazeer2013/nd00333_AZMLND_C2/blob/master/project/UdacityAzureMLProjArch.png)
 
 # =====================================
 # Auto ML using Python SDK
@@ -379,7 +393,7 @@ Both models had excelent performance but in the wild west of Spam world my next 
 ![Hyperdrive run file containing the environment details](https://github.com/Nazeer2013/nd00333-capstone/blob/master/finalproject/hyperdrive_images/hyperdrive_conda_env_yml.png)
 
 # =====================================
-# HyperParameter tuning using Keras tuner
+# HyperParameter tuning using Neural Networks and Deep Learning
 # =====================================
 
 # Standout Exercies 
