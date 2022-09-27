@@ -210,11 +210,11 @@ Adding samples of spam to matchup to the size of ham. Using above technique can 
 
 Other techniques like __Use of more data__  is a simple one that can help prevent overfitting. Usage of more data helps model reach solutions that are more flexible as it accommodates more conditions. 
 
-__Prevent target leak__ this occurs when your model have access to data that it normally doesn't at the time of prediction. Due to this model may have inflated performance during training but poor performance when deployed to predict on real data.  
+__Prevent target leak__ this occurs when your model have access to data that it normally doesn't at the time of prediction. Due to this model may have inflated performance during training but poor performance when deployed to predict on real data.  Keeping data access consistant during training and prediction help avoid target leak issue.
 
-__Removing of noisy or least important features__ from the model reduces the complexity of the model and in turn help prevent overfitting.
+__Removal of noisy or least important features__ from the model reduces the complexity of the model and in turn help prevent overfitting.
 
-In this  case it make sense to drop additional columns Column3, Column4 and Column5 from training dataset if it does not have influence on ham/spam determination and its not used during the testing of model.
+In  case of SMS spam data it make sense to drop additional columns Column3, Column4 and Column5 from training dataset if it does not have influence on ham/spam determination and is not used during the testing of model.
 
 
 ### There are also built in automated capabilities of Automated ML to help deal with imbalanced data and overfitting
