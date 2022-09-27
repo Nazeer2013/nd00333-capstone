@@ -177,8 +177,9 @@ Please refer to the notebook link below for the captured details:
 
 Question of how well your model performs on new __unseen data__? Better the model, better it performs on unseen data. 
 
-The problem of __data imbalance__ and __Overfitting__ is in the way of good model. 
+The problem of __Data imbalance__ and __Overfitting__ is in the way of good model. 
 
+__Imbalanced Data__ refers to datasets where the target class has an uneen distribution of observations. i.e., one class (majority class) has a very high number of observations and the other (minority class) has very low number of observations.
 
 __Overfitting__ occurs when a model fits the training data too well, and as a result can't accurately predict on unseen test data
 
